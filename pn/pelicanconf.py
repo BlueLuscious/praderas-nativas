@@ -35,14 +35,22 @@ DEFAULT_PAGINATION = False
 # RELATIVE_URLS = True
 
 INDEX_SAVE_AS = ""
+
 PAGE_PATHS = ["pages"]
+
+ARTICLE_EXCLUDES = ["templates"]
+
 STATIC_PATHS = ["static"]
+
 DELETE_OUTPUT_DIRECTORY = True
-THEME_TEMPLATES_OVERRIDES = ["templates"]
+
+THEME_TEMPLATES_OVERRIDES = ["content/templates"]
+
 TEMPLATE_PAGES = {
     "index.html": "index.html",
     "base.html": "templates/base.html",
 }
+
 JINJA_ENVIRONMENT = {
     "extensions": ["jinja2.ext.i18n"],
 }
