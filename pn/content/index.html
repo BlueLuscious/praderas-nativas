@@ -8,13 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {# <link rel="icon" href="" type="image/x-icon"> #}
     {# <link rel="stylesheet" href="{% static 'css/base.css' %}"> #}
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 {% endblock head %}
 
 {% block content %}
-<div class="flex flex-col items-center justify-center gap-y-2 p-4">
-    <h2>Bienvenido a mi rincón de prueba</h2>
-    <p>Esto es un test para ver si Pelican se porta bien.</p>
+<div class="relative z-10 flex flex-col items-center justify-center gap-y-2 w-full h-screen pt-24 bg-blue-50">
+    {% include "components/carroussel.html" %}
 </div>
 {% endblock content %}

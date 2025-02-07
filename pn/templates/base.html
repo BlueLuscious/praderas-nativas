@@ -2,6 +2,10 @@
 <html lang="en">
 {% block head %}
 {% endblock head %}
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
 <body>
 
     <section>
@@ -9,7 +13,7 @@
         {% include "components-base/right-side-navbar.html" %}
     </section>    
 
-    <section class="pt-24 bg-gray-200">
+    <section class="bg-gray-200">
         {% block content %}
         {% endblock content %}
     </section>
@@ -19,6 +23,7 @@
     </section>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 {# <script type="module" src="{% static 'js/base.js' %}"></script>
 <script src="{% static 'js/tailwind/tailwind.config.js' %}"></script> #}
 </html>
