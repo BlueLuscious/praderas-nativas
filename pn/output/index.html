@@ -40,56 +40,113 @@
 
     <section class="bg-gray-200">
 <div class="relative z-10 flex flex-col items-center justify-center gap-y-2 w-full h-screen pt-24 bg-blue-50">
-<div id="default-carousel" class="relative w-full h-full" data-carousel="slide" data-carousel-interval="5000">
-    
-    <!-- Carousel wrapper -->
-    <div class="relative w-full h-full overflow-hidden">
-        <!-- Item 1 -->
-        <div class="hidden duration-500 ease-in-out h-full" data-carousel-item>
-            <img src="../static/images/pn-1.webp" alt="...">
-        </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-500 ease-in-out" data-carousel-item>
-            <img src="../static/images/pn-2.jpg" alt="...">
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-500 ease-in-out" data-carousel-item>
-            <img src="../static/images/pn-3.jpg" alt="...">
-        </div>
-        <!-- Item 4 -->
-        <div class="hidden duration-500 ease-in-out" data-carousel-item>
-            <img src="../static/images/pn-4.jpg" alt="...">
-        </div>
+<div id="main_carroussel" class="relative size-full" 
+    data-carousel="slide" 
+    data-carousel-interval="5000"
+>
+    <!-- Carroussel Items -->
+    <div class="relative size-full overflow-hidden">
+<!-- Item 1 -->
+<div class="hidden flex items-start justify-start size-full bg-[url(../static/images/pn-1.webp)] 
+    bg-cover bg-center duration-500 ease-in-out" data-carousel-item
+>
+    <div class="max-w-xl p-4">
+        <p class="bg-white/70 p-4 rounded-lg shadow-lg">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit commodo per auctor proin dictum malesuada, 
+            interdum viverra metus habitant torquent suscipit magnis a leo morbi sodales. 
+            Phasellus habitasse nec a convallis scelerisque elementum, ridiculus sagittis eget pulvinar ultricies 
+            pretium nullam, euismod purus nam mi fringilla. Turpis dictumst maecenas potenti consequat orci dis 
+            eget tincidunt vehicula per, nibh egestas at taciti laoreet nulla lacinia vitae ultrices nec, 
+            libero quis rhoncus malesuada tortor primis arcu hac pretium.
+        </p>
     </div>
+</div>
+<!-- Item 2 -->
+<div class="hidden flex items-start justify-end size-full bg-[url(../static/images/pn-2.jpg)] 
+    bg-cover bg-center duration-500 ease-in-out" data-carousel-item
+>
+    <div class="max-w-xl p-4">
+        <p class="bg-white/70 p-4 rounded-lg shadow-lg">
+            Porta blandit porttitor eleifend tempor leo tincidunt vitae fringilla senectus, pretium varius duis 
+            vehicula placerat proin inceptos quisque fermentum dui, dis metus non pharetra nulla consequat sapien hac. 
+            Vitae conubia tellus pretium donec morbi volutpat cras ante eleifend, posuere primis neque lobortis 
+            ornare feugiat penatibus congue natoque, placerat odio pulvinar class aptent iaculis laoreet mi. 
+            Tortor tempus neque sollicitudin suscipit cubilia blandit eget fermentum accumsan, netus nulla vestibulum 
+            diam nostra imperdiet convallis.
+        </p>
+    </div>
+</div>
+<!-- Item 3 -->
+<div class="hidden flex items-start justify-start size-full bg-[url(../static/images/pn-3.jpg)] 
+    bg-cover bg-center duration-500 ease-in-out" data-carousel-item
+>
+    <div class="max-w-xl p-4">
+        <p class="bg-white/70 p-4 rounded-lg shadow-lg">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit commodo per auctor proin dictum malesuada, 
+            interdum viverra metus habitant torquent suscipit magnis a leo morbi sodales. 
+            Phasellus habitasse nec a convallis scelerisque elementum, ridiculus sagittis eget pulvinar ultricies 
+            pretium nullam, euismod purus nam mi fringilla. Turpis dictumst maecenas potenti consequat orci dis 
+            eget tincidunt vehicula per, nibh egestas at taciti laoreet nulla lacinia vitae ultrices nec, 
+            libero quis rhoncus malesuada tortor primis arcu hac pretium.
+        </p>
+    </div>
+</div>
+<!-- Item 4 -->
+<div class="hidden flex items-start justify-end size-full bg-[url(../static/images/pn-4.jpg)] 
+    bg-cover bg-center duration-500 ease-in-out" data-carousel-item
+>
+    <div class="max-w-xl p-4">
+        <p class="bg-white/70 p-4 rounded-lg shadow-lg">
+            Porta blandit porttitor eleifend tempor leo tincidunt vitae fringilla senectus, pretium varius duis 
+            vehicula placerat proin inceptos quisque fermentum dui, dis metus non pharetra nulla consequat sapien hac. 
+            Vitae conubia tellus pretium donec morbi volutpat cras ante eleifend, posuere primis neque lobortis 
+            ornare feugiat penatibus congue natoque, placerat odio pulvinar class aptent iaculis laoreet mi. 
+            Tortor tempus neque sollicitudin suscipit cubilia blandit eget fermentum accumsan, netus nulla vestibulum 
+            diam nostra imperdiet convallis.
+        </p>
+    </div>
+</div>    </div>
     
-    <!-- Slider indicators -->
-    <div class="absolute -inset-2 z-30 flex items-end justify-center w-full h-full">
-        <div class="flex flex-row gap-x-2 p-2 bg-gray-800/30 rounded-full">
-            <button type="button" class="w-4 h-4 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-            <button type="button" class="w-4 h-4 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-            <button type="button" class="w-4 h-4 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-            <button type="button" class="w-4 h-4 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-        </div>
+    <!-- Carroussel Indicadores -->
+    <div class="z-30 absolute inset-2 flex items-end justify-center">
+        <div class="flex flex-row gap-x-2 p-2 bg-white/80 rounded-full">
+<button type="button" class="w-4 h-4 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+<button type="button" class="w-4 h-4 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+<button type="button" class="w-4 h-4 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+<button type="button" class="w-4 h-4 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>        </div>
     </div>
 
-    <!-- Slider controls -->
-    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+    <!-- Carroussel Controles -->
+<div class="z-30 absolute inset-y-0 start-0 flex items-center h-full p-4 cursor-pointer">
+    <button type="button" class="group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/80 
+            group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-gray-800/70 group-focus:outline-none"
+        >
+            <svg class="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
             </svg>
-            <span class="sr-only">Previous</span>
         </span>
     </button>
-    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+</div>
+<div class="z-30 absolute inset-y-0 end-0 flex items-center h-full p-4 cursor-pointer">
+    <button type="button" class="group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/80 
+            group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-gray-800/70 group-focus:outline-none"
+        >
+            <svg class="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
             </svg>
-            <span class="sr-only">Next</span>
         </span>
     </button>
-</div></div>
+</div></div></div>
+<div class="relative z-10 flex flex-col items-center justify-center gap-y-2 w-full h-screen p-4 bg-blue-50">
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center gap-4 size-full">
+        <div class="size-full max-w-xl max-h-96 bg-white rounded-md shadow-md">
+        </div>
+        <div class="size-full max-w-xl max-h-96 bg-white rounded-md shadow-md">
+        </div>
+    </div>
+</div>
     </section>
 
     <section>

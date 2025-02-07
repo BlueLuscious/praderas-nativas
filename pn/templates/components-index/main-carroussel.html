@@ -1,0 +1,25 @@
+{% extends "./components/carroussel.html" %}
+
+{# Identificador del elemento carroussel #}
+{% block carroussel_id %}main_carroussel{% endblock carroussel_id %}
+
+{# Colocar el tipo de carroussel (slide o statis) #}
+{% block carroussel_type %}slide{% endblock carroussel_type %}
+
+{# Colocar intervalo en milisegundos solo si es carroussel_type = slide #}
+{% block carroussel_interval %}5000{% endblock carroussel_interval %} 
+
+{# Items del carroussel #}
+{% block carroussel_items %}
+{% include "components-index/main-carroussel/items.html" %}
+{% endblock carroussel_items %}
+
+{# Indicadores del carroussel #}
+{% block carroussel_indicators %}
+{% include "components-index/main-carroussel/indicators.html" %}
+{% endblock carroussel_indicators %}
+
+{# Controles del carroussel #}
+{% block carroussel_controls %}
+{% include "components-index/main-carroussel/controls.html" %}
+{% endblock carroussel_controls %}
