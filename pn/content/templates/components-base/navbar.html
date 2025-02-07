@@ -1,17 +1,20 @@
 <div class="fixed left-0 top-0 z-20 w-full flex flex-row items-center justify-between p-2 bg-white shadow-lg">
 
+    {# Logo #}
     <div class="w-20 h-20">
         <img class="w-20 h-20" src="../static/images/pn-logo.png" alt="">
     </div>
 
-    <button type="button" id="menu_button" class="relative" 
-        onclick="openSideNavbar('background_rsn', 'right_side_navbar', 'translate-x-full')"
+    {# Open Menu Button (Mobile & SM Screens) #}
+    <button type="button" id="open_menu" class="relative md:hidden" 
+        onclick="openSideNavbar('right_side_navbar', 'background_rsn', 'translate-x-full')"
     >Menú</button> 
     
-     <div class="hidden md:flex md:flex-row md:gap-x-4">
-        <div>Inicio</div>
-        <div>Nosotros</div>
-        <div>Contactanos</div>
-     </div>
+    {# Navbar items (MD & larger Screens) #}
+    <div class="hidden md:flex md:flex-row md:gap-x-4">
+    <div>Inicio</div>
+    <div>Nosotros</div>
+    <div>Contactanos</div>
+    </div>
 
 </div>
