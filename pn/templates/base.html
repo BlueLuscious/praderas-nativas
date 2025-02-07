@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{% block head %}
+{% endblock head %}
+<body>
+
+    <section>
+        {% include "components-base/navbar.html" %}
+        {% include "components-base/right-side-navbar.html" %}
+    </section>    
+
+    <section class="pt-24 bg-gray-200">
+        {% block content %}
+        {% endblock content %}
+    </section>
+
+    <section>
+        {% include "components-base/footer.html" %}
+    </section>
+
+</body>
+{# <script type="module" src="{% static 'js/base.js' %}"></script>
+<script src="{% static 'js/tailwind/tailwind.config.js' %}"></script> #}
+</html>
