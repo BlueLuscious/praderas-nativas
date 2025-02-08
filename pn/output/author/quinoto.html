@@ -7,49 +7,65 @@
 <body>
 
     <section>
-<div class="fixed left-0 top-0 z-20 w-full flex flex-row items-center justify-between p-2 bg-white shadow-lg">
-
-    <div class="w-20 h-20">
-        <img class="w-20 h-20" src="../static/images/pn-logo.png" alt="">
+<div class="fixed left-0 top-0 z-20 flex flex-row items-center justify-between 
+    w-full py-2 px-4 bg-primary-red_tone_1 shadow-lg shadow-secondary-gray_tone_2/70"
+>
+    <div class="w-16 h-16">
+        <img class="w-16 h-16" src="../static/images/pn-logo.png" alt="">
     </div>
 
-    <button type="button" id="open_menu" class="relative md:hidden" 
+    <button type="button" id="open_menu" class="relative md:hidden p-2 bg-white 
+        text-primary-red_tone_2 font-semibold rounded-md" 
         onclick="openSideNavbar('right_side_navbar', 'background_rsn', 'translate-x-full')"
     >Menú</button> 
     
     <div class="hidden md:flex md:flex-row md:gap-x-4">
-    <div>Inicio</div>
-    <div>Nosotros</div>
-    <div>Contactanos</div>
+        <div class="nav_item p-2 font-semibold rounded-md"
+            data-path="/"
+        >Inicio</div>
+        <div class="nav_item p-2 font-semibold rounded-md"
+            data-path="/about_us"
+        >Nosotros</div>
+        <div class="nav_item p-2 font-semibold rounded-md"
+            data-path="/contact_us"
+        >Contactanos</div>
     </div>
 
 </div><div id="background_rsn" class="fixed z-40 left-0 bottom-0 md:hidden w-full h-full bg-black bg-opacity-20
     transform translate-x-full">
 </div>
 
-<div id="right_side_navbar" class="fixed z-50 right-0 bottom-0 md:hidden flex flex-col items-center gap-y-4 h-full w-full 
-    sm:w-2/4 lg:w-1/4 bg-white transform translate-x-full transition-transform duration-300 ease-in-out">
-
-    <div class="relative flex flex-row items-center justify-between w-full h-20 mt-2 px-2">
-        <div class="ml-5 text-xl cinzel-semibold">Menú</div>
-
-        <button type="button" id="close_menu" class="flex items-center mr-5 ml-auto"
-            onclick="openSideNavbar('right_side_navbar', 'background_rsn', 'translate-x-full')" 
-        >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
-                class="size-8 transition-transform duration-300 ease-in-out cursor-pointer hover:-rotate-90"
+<div id="right_side_navbar" class="fixed z-50 right-0 bottom-0 md:hidden flex flex-col items-center gap-y-4 
+    h-full w-full max-w-xs bg-secondary-gray_tone_1 transform translate-x-full 
+    transition-transform duration-300 ease-in-out"
+>
+    <div class="relative w-full h-16 p-4 text-white">
+        <div class="relative flex flex-row items-center justify-between h-16 p-4 border-b border-white">
+            <div class="text-lg cinzel-semibold">Menú</div>
+    
+            <button type="button" id="close_menu" class="flex items-center ml-auto"
+                onclick="openSideNavbar('right_side_navbar', 'background_rsn', 'translate-x-full')" 
             >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-            </svg>
-        </button>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
+                    class="size-6 transition-transform duration-300 ease-in-out cursor-pointer hover:-rotate-90"
+                >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
     </div>
 
-    <div class="flex flex-col gap-y-4 items-center">
-        <div>Inicio</div>
-        <div>Nosotros</div>
-        <div>Contactanos</div>
+    <div class="relative flex flex-col gap-y-4 w-full px-4 py-6 text-center">
+        <div class="nav_item w-full p-2 font-semibold rounded-md"
+            data-path="/"
+        >Inicio</div>
+        <div class="nav_item w-full p-2 font-semibold rounded-md"
+            data-path="/about_us"
+        >Nosotros</div>
+        <div class="nav_item w-full p-2 font-semibold rounded-md"
+            data-path="/contact_us"
+        >Contactanos</div>
     </div>
-
 </div>    </section>    
 
     <section class="bg-gray-200">
@@ -85,4 +101,5 @@
 </body>
 <script type="module" src="../static/js/base.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+<script src="../static/js/tailwind.config.js"></script>
 </html>
