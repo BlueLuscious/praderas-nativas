@@ -17,17 +17,21 @@
 </div> #}
 
 {# Section #}
-<div class="flex items-end md:items-start justify-center md:justify-start 
+<div class="flex flex-col-reverse md:flex-row items-stretch justify-between 
     w-full h-screen p-4 md:p-8 bg-[url(../static/images/cow-1.webp)] bg-cover bg-center"
 >
-    <div class="flex justify-center size-64 md:size-72 bg-white/50 rounded-lg">
+    <div class="self-center md:self-start flex justify-center size-64 md:size-72 bg-white/50 rounded-lg">
         <img src="static/images/pn-logo.png">
     </div>
+
+    <a href="#contact_us" class="self-start size-fit p-2 bg-primary-red_tone_3 
+        text-white text-xl rounded-lg hover:bg-primary-red_tone_3/70"
+    >Contactanos</a>
 </div>
 
 {# Section #}
-<div class="relative z-10 flex flex-col items-start justify-center gap-y-2 w-full h-screen 
-    p-4 bg-[url(../static/images/cow-1.jpg)] bg-cover bg-center"
+<div id="contact_us" class="relative z-10 flex flex-col items-start justify-center gap-y-2 w-full h-screen 
+    p-4 bg-[url(../static/images/cow-4.jpg)] bg-cover bg-center"
 >
     <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center gap-4 size-full">
         <div class="flex flex-col gap-y-4 items-center justify-evenly size-full max-w-md max-h-64
@@ -40,7 +44,7 @@
 </div>
 
 {# Section #}
-<div class="relative z-10 flex flex-col items-end justify-center gap-y-2 w-full h-screen 
+{# <div id="contact_us" class="relative z-10 flex flex-col items-end justify-center gap-y-2 w-full h-screen 
     p-4 bg-[url(../static/images/cow-2.jpg)] bg-cover bg-center"
 >
     <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center gap-4 size-full">
@@ -51,5 +55,5 @@
             <div class="text-md md:text-xl">+54 3400-657310</div>
         </div>
     </div>
-</div>
+</div> #}
 {% endblock content %}
