@@ -12,153 +12,15 @@
 </head>
 <body>
 
-    <section>
-<div class="fixed left-0 top-0 z-20 flex flex-row items-center justify-between 
-    w-full py-2 px-4 bg-primary-red_tone_1 shadow-lg shadow-secondary-gray_tone_2/70"
->
-    <div class="w-16 h-16">
-        <img class="w-16 h-16" src="../static/images/pn-logo.png" alt="">
-    </div>
-
-    <button type="button" id="open_menu" class="relative md:hidden p-2 bg-white 
-        text-primary-red_tone_2 font-semibold rounded-md" 
-        onclick="openSideNavbar('right_side_navbar', 'background_rsn', 'translate-x-full')"
-    >Menú</button> 
-    
-    <div class="hidden md:flex md:flex-row md:gap-x-4">
-        <button type="button" class="nav_item p-2 font-semibold rounded-md"
-            data-path="/"
-        >Inicio</button>
-        <button type="button" class="nav_item p-2 font-semibold rounded-md"
-            data-path="/about_us"
-        >Nosotros</button>
-        <button type="button" class="nav_item p-2 font-semibold rounded-md"
-            data-path="/contact_us"
-        >Contactanos</button>
-    </div>
-
-</div><div id="background_rsn" class="fixed z-40 left-0 bottom-0 md:hidden w-full h-full bg-black bg-opacity-20
-    transform translate-x-full">
-</div>
-
-<div id="right_side_navbar" class="fixed z-50 right-0 bottom-0 md:hidden flex flex-col items-center gap-y-4 
-    h-full w-full max-w-xs bg-secondary-gray_tone_1 transform translate-x-full 
-    transition-transform duration-300 ease-in-out"
->
-    <div class="relative w-full h-16 p-4 text-white">
-        <div class="relative flex flex-row items-center justify-between h-16 p-4 border-b border-white">
-            <div class="text-lg cinzel-semibold">Menú</div>
-    
-            <button type="button" id="close_menu" class="flex items-center ml-auto"
-                onclick="openSideNavbar('right_side_navbar', 'background_rsn', 'translate-x-full')" 
-            >
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
-                    class="size-6 transition-transform duration-300 ease-in-out cursor-pointer hover:-rotate-90"
-                >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                </svg>
-            </button>
-        </div>
-    </div>
-
-    <div class="relative flex flex-col gap-y-4 w-full px-4 py-6 text-center">
-        <button type="button" class="nav_item w-full p-2 font-semibold rounded-md"
-            data-path="/"
-        >Inicio</button>
-        <button type="button" class="nav_item w-full p-2 font-semibold rounded-md"
-            data-path="/about_us"
-        >Nosotros</button>
-        <button type="button" class="nav_item w-full p-2 font-semibold rounded-md"
-            data-path="/contact_us"
-        >Contactanos</button>
-    </div>
-</div>    </section>    
-
     <section class="bg-gray-200">
-<div class="relative z-10 flex flex-col items-center justify-center gap-y-2 w-full h-screen pt-20 bg-blue-50">
-<div id="main_carroussel" class="relative size-full" 
-    data-carousel="slide" 
-    data-carousel-interval="5000"
->
-    <!-- Carroussel Items -->
-    <div class="relative size-full overflow-hidden">
-<!-- Item 1 -->
-<div class="hidden flex items-start justify-start size-full bg-[url(../static/images/pn-1.webp)] 
-    bg-cover bg-center duration-500 ease-in-out" data-carousel-item
->
-    <div class="max-w-xl p-4">
-        <p class="bg-white/70 p-4 rounded-lg shadow-lg">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit commodo per auctor proin dictum malesuada, 
-            interdum viverra metus habitant torquent suscipit magnis a leo morbi sodales.
-        </p>
-    </div>
-</div>
-<!-- Item 2 -->
-<div class="hidden flex items-start justify-end size-full bg-[url(../static/images/pn-2.jpg)] 
-    bg-cover bg-center duration-500 ease-in-out" data-carousel-item
->
-    <div class="max-w-xl p-4">
-        <p class="bg-white/70 p-4 rounded-lg shadow-lg">
-            Porta blandit porttitor eleifend tempor leo tincidunt vitae fringilla senectus, pretium varius duis 
-            vehicula placerat proin inceptos quisque fermentum dui, dis metus non pharetra nulla consequat sapien hac.
-        </p>
-    </div>
-</div>
-<!-- Item 3 -->
-<div class="hidden flex items-start justify-start size-full bg-[url(../static/images/pn-3.jpg)] 
-    bg-cover bg-center duration-500 ease-in-out" data-carousel-item
->
-    <div class="max-w-xl p-4">
-        <p class="bg-white/70 p-4 rounded-lg shadow-lg">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit commodo per auctor proin dictum malesuada, 
-            interdum viverra metus habitant torquent suscipit magnis a leo morbi sodales. 
-        </p>
-    </div>
-</div>
-<!-- Item 4 -->
-<div class="hidden flex items-start justify-end size-full bg-[url(../static/images/pn-4.jpg)] 
-    bg-cover bg-center duration-500 ease-in-out" data-carousel-item
->
-    <div class="max-w-xl p-4">
-        <p class="bg-white/70 p-4 rounded-lg shadow-lg">
-            Porta blandit porttitor eleifend tempor leo tincidunt vitae fringilla senectus, pretium varius duis 
-            vehicula placerat proin inceptos quisque fermentum dui, dis metus non pharetra nulla consequat sapien hac.
-        </p>
-    </div>
-</div>    </div>
-    
-    <!-- Carroussel Indicadores -->
-    <div class="z-30 absolute inset-2 flex items-end justify-center">
-        <div class="flex flex-row gap-x-2 p-2 bg-white/80 rounded-full">
-<button type="button" class="w-4 h-4 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-<button type="button" class="w-4 h-4 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-<button type="button" class="w-4 h-4 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-<button type="button" class="w-4 h-4 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>        </div>
-    </div>
 
-    <!-- Carroussel Controles -->
-<div class="z-30 absolute inset-y-0 start-0 flex items-center h-full p-4 cursor-pointer">
-    <button type="button" class="group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/80 
-            group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-gray-800/70 group-focus:outline-none"
-        >
-            <svg class="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-            </svg>
-        </span>
-    </button>
+<div class="flex items-end md:items-start justify-center md:justify-start 
+    w-full h-screen p-4 md:p-8 bg-[url(../static/images/cow-1.webp)] bg-cover bg-center"
+>
+    <div class="flex justify-center size-64 md:size-72 bg-white/50 rounded-lg">
+        <img src="static/images/pn-logo.png">
+    </div>
 </div>
-<div class="z-30 absolute inset-y-0 end-0 flex items-center h-full p-4 cursor-pointer">
-    <button type="button" class="group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/80 
-            group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-gray-800/70 group-focus:outline-none"
-        >
-            <svg class="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-        </span>
-    </button>
-</div></div></div>
 
 <div class="relative z-10 flex flex-col items-start justify-center gap-y-2 w-full h-screen 
     p-4 bg-[url(../static/images/cow-1.jpg)] bg-cover bg-center"
