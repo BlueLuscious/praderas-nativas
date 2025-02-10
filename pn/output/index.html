@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Index</title>
+    <title>Praderas Nativas</title>
     <meta charset="UTF-8">
     <meta name="date" content="2025-02-05" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,53 +13,69 @@
 <body>
 
     <section>
-<div class="fixed left-0 top-0 z-20 w-full flex flex-row items-center justify-between p-2 bg-white shadow-lg">
-
-    <div class="w-20 h-20">
-        <img class="w-20 h-20" src="../static/images/pn-logo.png" alt="">
+<div class="fixed left-0 top-0 z-20 flex flex-row items-center justify-between 
+    w-full py-2 px-4 bg-primary-red_tone_1 shadow-lg shadow-secondary-gray_tone_2/70"
+>
+    <div class="w-16 h-16">
+        <img class="w-16 h-16" src="../static/images/pn-logo.png" alt="">
     </div>
 
-    <button type="button" id="open_menu" class="relative md:hidden" 
+    <button type="button" id="open_menu" class="relative md:hidden p-2 bg-white 
+        text-primary-red_tone_2 font-semibold rounded-md" 
         onclick="openSideNavbar('right_side_navbar', 'background_rsn', 'translate-x-full')"
     >Menú</button> 
     
     <div class="hidden md:flex md:flex-row md:gap-x-4">
-    <div>Inicio</div>
-    <div>Nosotros</div>
-    <div>Contactanos</div>
+        <button type="button" class="nav_item p-2 font-semibold rounded-md"
+            data-path="/"
+        >Inicio</button>
+        <button type="button" class="nav_item p-2 font-semibold rounded-md"
+            data-path="/about_us"
+        >Nosotros</button>
+        <button type="button" class="nav_item p-2 font-semibold rounded-md"
+            data-path="/contact_us"
+        >Contactanos</button>
     </div>
 
 </div><div id="background_rsn" class="fixed z-40 left-0 bottom-0 md:hidden w-full h-full bg-black bg-opacity-20
     transform translate-x-full">
 </div>
 
-<div id="right_side_navbar" class="fixed z-50 right-0 bottom-0 md:hidden flex flex-col items-center gap-y-4 h-full w-full 
-    sm:w-2/4 lg:w-1/4 bg-white transform translate-x-full transition-transform duration-300 ease-in-out">
-
-    <div class="relative flex flex-row items-center justify-between w-full h-20 mt-2 px-2">
-        <div class="ml-5 text-xl cinzel-semibold">Menú</div>
-
-        <button type="button" id="close_menu" class="flex items-center mr-5 ml-auto"
-            onclick="openSideNavbar('right_side_navbar', 'background_rsn', 'translate-x-full')" 
-        >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
-                class="size-8 transition-transform duration-300 ease-in-out cursor-pointer hover:-rotate-90"
+<div id="right_side_navbar" class="fixed z-50 right-0 bottom-0 md:hidden flex flex-col items-center gap-y-4 
+    h-full w-full max-w-xs bg-secondary-gray_tone_1 transform translate-x-full 
+    transition-transform duration-300 ease-in-out"
+>
+    <div class="relative w-full h-16 p-4 text-white">
+        <div class="relative flex flex-row items-center justify-between h-16 p-4 border-b border-white">
+            <div class="text-lg cinzel-semibold">Menú</div>
+    
+            <button type="button" id="close_menu" class="flex items-center ml-auto"
+                onclick="openSideNavbar('right_side_navbar', 'background_rsn', 'translate-x-full')" 
             >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-            </svg>
-        </button>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
+                    class="size-6 transition-transform duration-300 ease-in-out cursor-pointer hover:-rotate-90"
+                >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
     </div>
 
-    <div class="flex flex-col gap-y-4 items-center">
-        <div>Inicio</div>
-        <div>Nosotros</div>
-        <div>Contactanos</div>
+    <div class="relative flex flex-col gap-y-4 w-full px-4 py-6 text-center">
+        <button type="button" class="nav_item w-full p-2 font-semibold rounded-md"
+            data-path="/"
+        >Inicio</button>
+        <button type="button" class="nav_item w-full p-2 font-semibold rounded-md"
+            data-path="/about_us"
+        >Nosotros</button>
+        <button type="button" class="nav_item w-full p-2 font-semibold rounded-md"
+            data-path="/contact_us"
+        >Contactanos</button>
     </div>
-
 </div>    </section>    
 
     <section class="bg-gray-200">
-<div class="relative z-10 flex flex-col items-center justify-center gap-y-2 w-full h-screen pt-24 bg-blue-50">
+<div class="relative z-10 flex flex-col items-center justify-center gap-y-2 w-full h-screen pt-20 bg-blue-50">
 <div id="main_carroussel" class="relative size-full" 
     data-carousel="slide" 
     data-carousel-interval="5000"
@@ -73,11 +89,7 @@
     <div class="max-w-xl p-4">
         <p class="bg-white/70 p-4 rounded-lg shadow-lg">
             Lorem ipsum dolor sit amet consectetur adipiscing elit commodo per auctor proin dictum malesuada, 
-            interdum viverra metus habitant torquent suscipit magnis a leo morbi sodales. 
-            Phasellus habitasse nec a convallis scelerisque elementum, ridiculus sagittis eget pulvinar ultricies 
-            pretium nullam, euismod purus nam mi fringilla. Turpis dictumst maecenas potenti consequat orci dis 
-            eget tincidunt vehicula per, nibh egestas at taciti laoreet nulla lacinia vitae ultrices nec, 
-            libero quis rhoncus malesuada tortor primis arcu hac pretium.
+            interdum viverra metus habitant torquent suscipit magnis a leo morbi sodales.
         </p>
     </div>
 </div>
@@ -88,11 +100,7 @@
     <div class="max-w-xl p-4">
         <p class="bg-white/70 p-4 rounded-lg shadow-lg">
             Porta blandit porttitor eleifend tempor leo tincidunt vitae fringilla senectus, pretium varius duis 
-            vehicula placerat proin inceptos quisque fermentum dui, dis metus non pharetra nulla consequat sapien hac. 
-            Vitae conubia tellus pretium donec morbi volutpat cras ante eleifend, posuere primis neque lobortis 
-            ornare feugiat penatibus congue natoque, placerat odio pulvinar class aptent iaculis laoreet mi. 
-            Tortor tempus neque sollicitudin suscipit cubilia blandit eget fermentum accumsan, netus nulla vestibulum 
-            diam nostra imperdiet convallis.
+            vehicula placerat proin inceptos quisque fermentum dui, dis metus non pharetra nulla consequat sapien hac.
         </p>
     </div>
 </div>
@@ -104,10 +112,6 @@
         <p class="bg-white/70 p-4 rounded-lg shadow-lg">
             Lorem ipsum dolor sit amet consectetur adipiscing elit commodo per auctor proin dictum malesuada, 
             interdum viverra metus habitant torquent suscipit magnis a leo morbi sodales. 
-            Phasellus habitasse nec a convallis scelerisque elementum, ridiculus sagittis eget pulvinar ultricies 
-            pretium nullam, euismod purus nam mi fringilla. Turpis dictumst maecenas potenti consequat orci dis 
-            eget tincidunt vehicula per, nibh egestas at taciti laoreet nulla lacinia vitae ultrices nec, 
-            libero quis rhoncus malesuada tortor primis arcu hac pretium.
         </p>
     </div>
 </div>
@@ -118,11 +122,7 @@
     <div class="max-w-xl p-4">
         <p class="bg-white/70 p-4 rounded-lg shadow-lg">
             Porta blandit porttitor eleifend tempor leo tincidunt vitae fringilla senectus, pretium varius duis 
-            vehicula placerat proin inceptos quisque fermentum dui, dis metus non pharetra nulla consequat sapien hac. 
-            Vitae conubia tellus pretium donec morbi volutpat cras ante eleifend, posuere primis neque lobortis 
-            ornare feugiat penatibus congue natoque, placerat odio pulvinar class aptent iaculis laoreet mi. 
-            Tortor tempus neque sollicitudin suscipit cubilia blandit eget fermentum accumsan, netus nulla vestibulum 
-            diam nostra imperdiet convallis.
+            vehicula placerat proin inceptos quisque fermentum dui, dis metus non pharetra nulla consequat sapien hac.
         </p>
     </div>
 </div>    </div>
@@ -159,23 +159,48 @@
         </span>
     </button>
 </div></div></div>
-<div class="relative z-10 flex flex-col items-center justify-center gap-y-2 w-full h-screen p-4 bg-blue-50">
+
+<div class="relative z-10 flex flex-col items-start justify-center gap-y-2 w-full h-screen 
+    p-4 bg-[url(../static/images/cow-1.jpg)] bg-cover bg-center"
+>
     <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center gap-4 size-full">
-        <div class="size-full max-w-xl max-h-96 bg-white rounded-md shadow-md">
+        <div class="flex flex-col gap-y-4 items-center justify-evenly size-full max-w-md max-h-64
+            p-4 bg-white rounded-lg shadow-md"
+        >
+            <div class="text-lg md:text-2xl">Praderas Nativas</div>
+            <div class="text-md md:text-xl">+54 3400-662378</div>
         </div>
-        <div class="size-full max-w-xl max-h-96 bg-white rounded-md shadow-md">
+    </div>
+</div>
+
+<div class="relative z-10 flex flex-col items-end justify-center gap-y-2 w-full h-screen 
+    p-4 bg-[url(../static/images/cow-2.jpg)] bg-cover bg-center"
+>
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center gap-4 size-full">
+        <div class="md:col-start-2 flex flex-col gap-y-4 items-center justify-evenly size-full max-w-md max-h-64
+            p-4 bg-white rounded-lg shadow-md"
+        >
+            <div class="text-lg md:text-2xl">Pampa Norte</div>
+            <div class="text-md md:text-xl">+54 3400-657310</div>
         </div>
     </div>
 </div>
     </section>
 
     <section>
-<div class="relative flex flex-col items-center justify-evenly gap-y-4 w-full bg-gray-200">
-    
-    <div id="copyright" class="flex flex-row items-center gap-x-4 w-fit p-6">
-        <div class="p-2 border-b-2 border-transparent text-gray-400">
-            Copyright Praderas Nativas - 2025
+<div class="relative flex flex-col items-center justify-evenly gap-y-4 w-full 
+    bg-secondary-gray_tone_2"
+>    
+    <div class="flex flex-col md:flex-row items-center justify-center gap-x-2 w-full p-6 text-white">
+        <div class="flex flex-row items-center gap-x-2 border-b-2 border-transparent">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" 
+                class="bi bi-c-circle size-4"
+            >
+                <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512"/>
+            </svg>
+            <div><span id="year_footer"></span> Praderas Nativas.</div>
         </div>
+        <div>Todos los derechos reservados.</div>
     </div>
 
 </div>    </section>
@@ -183,4 +208,5 @@
 </body>
 <script type="module" src="../static/js/base.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+<script src="../static/js/tailwind.config.js"></script>
 </html>
